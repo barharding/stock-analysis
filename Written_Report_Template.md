@@ -8,8 +8,6 @@
 
 ### Analysis of Outcomes Based on Launch Date
 
-this is a test to see what it will show
-
 ### Analysis of Outcomes Based on Goals
 
 ### Challenges and Difficulties Encountered
