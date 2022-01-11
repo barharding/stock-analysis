@@ -10,6 +10,9 @@
 
 - The analysis is well described with screenshots and code
 
+![2017 Timer Original](/2017 Stock Analysis Original.png)
+
+
 ## Summary
 
 - There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt).
