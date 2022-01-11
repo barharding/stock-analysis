@@ -10,7 +10,7 @@
 
 - The analysis is well described with screenshots and code
 
-![2017 Timer Original](/2017 Stock Analysis Original.png)
+![2017 Timer Original](/2017_Stock_Analysis_Original.png)
 
 
 ## Summary
