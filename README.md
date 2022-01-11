@@ -15,23 +15,12 @@ Refactoring code a reality in development for a number of reasons some good and 
 
 ### 2017 Results
 
-2017 Original Code
-
-![2017 Timer Original](/2017_Stock_Analysis_Original.png)
-
-2017 Refactored code
-
-![2017 Time Refactored](/2017_Stock_Analysis_Refactored.png)
+![2017 Timer Compare](/2017_Comparison_Orig_vs_Refact.png)
 
 ### 2018 Results
 
-2018 Original Code
 
-![2018 Timer Original](/2018_Stock_Analysis_Original.png)
-
-2018 Refactored Code
-
-![2018 Time Refactored](/2018_Stock_Analysis_Refactored.png)
+![2018 Timer compare](/2018_Comparison_Orig_vs_Refact.png)
 
 
 ## Summary
