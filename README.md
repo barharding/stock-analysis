@@ -22,17 +22,17 @@ Refactoring code a reality in development for a number of reasons some good and 
 
 ### Refactored Index Array
 
-![Original Array code](/initializing array for all tickers.png)
+![Original Array code](/initializing_array_for_all_tickers.png)
 
-![revised Array code](/ticker index from dictionary.png)
+![revised Array code](/ticker_index_from_dictionary.png)
 
-![special function dictionary](/Function GetUniqeNames.png)
+![special function dictionary](/Function_GetUniqeNames.png)
 
 ### Refactored Loop through the Data & Use of Arrays
 
-![original embedded for loop](/original code nested for loop.png)
+![original embedded for loop](/original_code_nested_for_loop.png)
 
-![refactored single loop](/refactored code single for loop.png)
+![refactored single loop](/refactored_code_single_for_loop.png)
 
 
 ## Summary
