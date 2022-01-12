@@ -28,15 +28,15 @@ The original array has its value's manually set.  If the source data were to cha
 
 In the refactored code the ticker array is created dynamically. 
 
-![revised Array code](/ticker_index_from_dictionary.png)
+        ![revised Array code](/ticker_index_from_dictionary.png)
 
-![special function dictionary](/FunctionGetUniqeNames.png)
+        ![special function dictionary](/FunctionGetUniqeNames.png)
 
 ### Refactored Loop through the Data & Use of Arrays
 
-![original embedded for loop](/original_code_nested_for_loop.png)
+       ![original embedded for loop](/original_code_nested_for_loop.png)
 
-![refactored single loop](/refactored_code_single_for_loop.png)
+      ![refactored single loop](/refactored_code_single_for_loop.png)
 
 
 ## Summary
