@@ -29,19 +29,23 @@ In this section w
 
 The original array has its value's manually set.  If the source data were to change the code would need to be updated to reflect any added or removed tickers.
 
-
+*Figure 3:*
 ![Original Array code](/initializing_array_for_all_tickers.png)
 
 In the refactored code the ticker array is created dynamically. 
 
+*Figure 4:*
 ![revised Array code](/ticker_index_from_dictionary.png)
 
+*Figure 5:*
 ![special function dictionary](/FunctionGetUniqeNames.png)
 
 ### Changes to the Looping Pattern & Use of Arrays
 
+*Figure 6:*
 ![original embedded for loop](/original_code_nested_for_loop.png)
 
+*Figure 7:*
 ![refactored single loop](/refactored_code_single_for_loop.png)
 
 
