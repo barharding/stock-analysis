@@ -26,7 +26,7 @@ Refactoring code a reality in development for a number of reasons some good and 
 
 ![revised Array code](/ticker_index_from_dictionary.png)
 
-![special function dictionary](/Function_GetUniqeNames.png)
+![special function dictionary](/FunctionGetUniqeNames.png)
 
 ### Refactored Loop through the Data & Use of Arrays
 
