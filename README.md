@@ -22,7 +22,11 @@ Refactoring code a reality in development for a number of reasons some good and 
 
 ### Refactored Index Array
 
+The original array has its value's manually set.  If the source data were to change the code would need to be updated to reflect any added or removed tickers.
+
 ![Original Array code](/initializing_array_for_all_tickers.png)
+
+In the refactored code the ticker array is created dynamically. 
 
 ![revised Array code](/ticker_index_from_dictionary.png)
 
