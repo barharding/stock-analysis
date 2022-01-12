@@ -10,9 +10,14 @@ Refactoring code a reality in development for a number of reasons some good and 
 
 ## Analysis
 
-### Performance Results
+In this section we'll review the various parts of the original script which were refactored and why.  The analysis section will cover the following:
 
-- The analysis is well described with screenshots and code
+- Performance Results
+- Changes to the Index Array
+- Changes to the Looping Pattern & Use of Arrays
+
+### Performance Results
+In this section w
 
 
 ![2017 Timer Compare](/2017_Comparison_Orig_vs_Refact.png)
@@ -20,7 +25,7 @@ Refactoring code a reality in development for a number of reasons some good and 
 
 ![2018 Timer compare](/2018_Comparison_Orig_vs_Refact.png)
 
-### Refactored Index Array
+### Changes to the Index Array
 
 The original array has its value's manually set.  If the source data were to change the code would need to be updated to reflect any added or removed tickers.
 
@@ -33,7 +38,7 @@ In the refactored code the ticker array is created dynamically.
 
 ![special function dictionary](/FunctionGetUniqeNames.png)
 
-### Refactored Loop through the Data & Use of Arrays
+### Changes to the Looping Pattern & Use of Arrays
 
 ![original embedded for loop](/original_code_nested_for_loop.png)
 
