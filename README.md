@@ -42,5 +42,34 @@ In the refactored code the ticker array is created dynamically.
 
 ## Summary
 
+### General Advantages & Disadvantages of Refactoring Code
 - There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt).
+
+- Advantages
+  - Refactoring code ddldldldldld
+  - dldldldld
+  - dldldldld
+
+- Disadvantages
+  - dkdkdkdk
+  - dkdkdkd
+  - dkdkd
+
+
+### Advantages & Disadvantages of the Refactored VBA Script
 - There is a detailed statement on the advantages and disadvantages of the original and refactored VBA script (3 pt).
+
+- Advantages
+  - Refactoring code ddldldldldld
+  - dldldldld
+  - dldldldld
+
+- Disadvantages
+  - dkdkdkdk
+  - dkdkdkd
+  - dkdkd
+
+
+
+
+
