@@ -8,19 +8,31 @@ The code written in module two defines an array of 11 stock tickers and then loo
 
 Refactoring code a reality in development for a number of reasons some good and others not so much.  Many times code is refactored because the requirements have changed and updates are required.  Other times end users may be experiencing time out errors, capacity constraints, or lengthy processing times frustrating their efforts to complete a task.  Whatever the reason, reviewing and modifying existing code either your own or others is common. This challenge takes the code written in module 2 and asks that the code be improved so that the average run time is decreased and the process loops through the data once.
 
+## Analysis
 
-## Results
+### Performance Results
 
 - The analysis is well described with screenshots and code
 
-### 2017 Results
 
 ![2017 Timer Compare](/2017_Comparison_Orig_vs_Refact.png)
 
-### 2018 Results
-
 
 ![2018 Timer compare](/2018_Comparison_Orig_vs_Refact.png)
+
+### Refactored Index Array
+
+![Original Array code](/initializing array for all tickers.png)
+
+![revised Array code](/ticker index from dictionary.png)
+
+![special function dictionary](/Function GetUniqeNames.png)
+
+### Refactored Loop through the Data & Use of Arrays
+
+![original embedded for loop](/original code nested for loop.png)
+
+![refactored single loop](/refactored code single for loop.png)
 
 
 ## Summary
