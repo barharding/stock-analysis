@@ -28,9 +28,7 @@ The original array has its value's manually set.  If the source data were to cha
 
 In the refactored code the ticker array is created dynamically. 
 
-```
 ![revised Array code](/ticker_index_from_dictionary.png)
-```
 
 ![special function dictionary](/FunctionGetUniqeNames.png)
 
