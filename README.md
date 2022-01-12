@@ -24,6 +24,25 @@ Refactoring code a reality in development for a number of reasons some good and 
 
 The original array has its value's manually set.  If the source data were to change the code would need to be updated to reflect any added or removed tickers.
 
+```
+'Initialize array of all tickers
+    Dim tickers(11) As String
+    
+    tickers(0) = "AY"
+    tickers(1) = "CSIQ"
+    tickers(2) = "DQ"
+    tickers(3) = "ENPH"
+    tickers(4) = "FSLR"
+    tickers(5) = "HASI"
+    tickers(6) = "JKS"
+    tickers(7) = "RUN"
+    tickers(8) = "SEDG"
+    tickers(9) = "SPWR"
+    tickers(10) = "TERP"
+    tickers(11) = "VSLR"
+  
+```
+
 ![Original Array code](/initializing_array_for_all_tickers.png)
 
 In the refactored code the ticker array is created dynamically. 
