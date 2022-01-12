@@ -19,9 +19,8 @@ In this section we'll review the various parts of the original script which were
 ### Performance Results
 In this section w
 
-```
 *Figure 1:*
-```
+
 ![2017 Timer Compare](/2017_Comparison_Orig_vs_Refact.png)
 
 *Figure 2:*
@@ -53,6 +52,7 @@ In the refactored code the ticker array is created dynamically.
 ![original embedded for loop](/original_code_nested_for_loop.png)
 
 *Figure 7:*
+
 ![refactored single loop](/refactored_code_single_for_loop.png)
 
 
