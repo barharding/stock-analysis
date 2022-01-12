@@ -20,6 +20,7 @@ In this section we'll review the various parts of the original script which were
 In this section w
 
 *Figure 1*
+
 ![2017 Timer Compare](/2017_Comparison_Orig_vs_Refact.png)
 
 
