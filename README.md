@@ -35,13 +35,13 @@ Both figures 2 & 3, in the left pop ups show the timer from the original code wi
 
 ### Changes to the Index Array
 
-The original array has its value's manually set.  If the source data were to change the code would need to be updated to reflect any added or removed tickers.
+The original ticker array has its values manually set.  If the source data were to change the code would need to be updated to reflect any added or removed tickers.
 
 **_Figure 4: Original Manual Setting of Array_**
 
 ![Original Array code](/initializing_array_for_all_tickers.png)
 
-In the refactored code the ticker array is created dynamically. 
+In the refactored code the ticker array is created dynamically. This was acheived by refactoring a function which was sourced from https://www.py4u.net/discuss/1443953 answer # 2.
 
 **_Figure 5: Refactored Dynamic Array_**
 
