@@ -19,11 +19,11 @@ In this section we'll review the various parts of the original script which were
 ### Performance Results
 In this section w
 
-*Figure 1:*
+*Figure 1: Performance Results 2017*
 
 ![2017 Timer Compare](/2017_Comparison_Orig_vs_Refact.png)
 
-*Figure 2:*
+*Figure 2:Performance Results 2018*
 
 ![2018 Timer compare](/2018_Comparison_Orig_vs_Refact.png)
 
@@ -31,27 +31,27 @@ In this section w
 
 The original array has its value's manually set.  If the source data were to change the code would need to be updated to reflect any added or removed tickers.
 
-*Figure 3:*
+*Figure 3: Original Manual Setting of Array*
 
 ![Original Array code](/initializing_array_for_all_tickers.png)
 
 In the refactored code the ticker array is created dynamically. 
 
-*Figure 4:*
+*Figure 4: Refactored Dynamic Array*
 
 ![revised Array code](/ticker_index_from_dictionary.png)
 
-*Figure 5:*
+*Figure 5: Dictional to Create Unique List of Values for the the Array*
 
 ![special function dictionary](/FunctionGetUniqeNames.png)
 
 ### Changes to the Looping Pattern & Use of Arrays
 
-*Figure 6:*
+*Figure 6: Original For Loop & Embedded loop*
 
 ![original embedded for loop](/original_code_nested_for_loop.png)
 
-*Figure 7:*
+*Figure 7:Refactored Single Loop*
 
 ![refactored single loop](/refactored_code_single_for_loop.png)
 
