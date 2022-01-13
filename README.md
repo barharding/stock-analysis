@@ -60,8 +60,8 @@ In the **_YearAllStockAnalysis_** module the original code uses two *For loops* 
 
 ![original embedded for loop](/original_code_nested_for_loop.png)
 
-The **_AllStockAnalysisRefactored_** module **_Figure 8_** shows the code refactored leveraging the following four arrays:
-- tickerIndex
+The **_AllStockAnalysisRefactored_** module **_Figure 8_** shows the code refactored just after the TickerIndex array is set.  It begins by evaluating the lenght of the tickerIndex array so that we know how many tickers there are dynamically.  The following three arrays are then created:
+
 - tickerVolumes
 - tickerStartingPrices
 - tickerEnding Prices
@@ -70,7 +70,7 @@ The For Loop performs the following steps:
 1. The counter is set to iterate through the rows
 2. The currticker is set to the current ticker by the tickerIndex array which is incremented by the tickercounter (the code will only look at rows equal to the index ticker)
 3. The tickervolumes array is populated by the volume in column 8 of the row for that ticker
-4. The conditional statement for StaringPrice is executed and if true it writes to the starting price array that ticker
+4. The conditional statement for StaringPrice is executed and if true it writes to the starting price array that ticker index
 5. The conditional statement for EndingPrice is executed and if true it writes to the ending price array for that ticker
 
 
