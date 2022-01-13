@@ -54,9 +54,23 @@ In the refactored code, the ticker array is created dynamically by leveraging a 
 
 ### Changes to the Looping Pattern & Use of Arrays
 
+In the **_YearAllStockAnalysis_** module the original code uses two *For loops* with the second *For loop* nested to loop through the rows of data.  The outer loop will loop to the first ticker(0) and then will go into the inner loop.  The inner loop does three things at each of the 3013 rows.  First it will total the volume for each row that equals the ticker.  It also determines the starting price and ending price.  Followed by writing the values to the worksheet for the ticker as well as  increment to the next ticker by adding 1.  At this final step the outer loop begins again with the Ticker+1, repeats the cycle until it finishes at Ticker(11).  Each time the outer loop finishes it must write to the worksheet before it can move to the next ticker.  This stop, print, clear the variable and start anew for the next iteration has the effect of making the code run slower.
+
 **_Figure 7: Original For Loop & Embedded loop_**
 
 ![original embedded for loop](/original_code_nested_for_loop.png)
+
+The **_AllStockAnalysisRefactored_** module **_Figure 8_** shows the code refactored leveraging the following four arrays:
+- tickerIndex
+- tickerVolumes
+- tickerStartingPrices
+- tickerEnding Prices
+
+The For Loop performs the following steps:
+1. The counter is set to iterate through the rows
+2. The currticker variable is set to the current ticker by the tickerIndex array which is incremented by the tickercounter
+3. at the first row, it checks to see if the cells
+
 
 **_Figure 8:Refactored Single Loop_**
 
