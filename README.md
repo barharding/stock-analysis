@@ -17,11 +17,13 @@ In this section we'll review the various parts of the original script which were
 - Changes to the Looping Pattern & Use of Arrays
 
 ### Performance Results
-The VBA code written for the **_YearAllStockAnalysis_** module and the refactored code for the **_AllStockAnalysisRefactored_** module produces the same spreadsheet output as shown in **_Fugure 1_** along with the timer pop ups shown in **Figures 2 & Figures 3**.  
+The VBA code written for the **_YearAllStockAnalysis_** module and the refactored code for the **_AllStockAnalysisRefactored_** module produces the same spreadsheet output as shown in **_Figure 1_** along with the timer pop ups shown in **Figures 2 & Figures 3**.  
 
 **_Figure 1: Spreadsheet results refactored module_**
 
 ![Spreadsheet results](/Year_Over_Year_Comparison.png)
+
+Both figures 2 & 3, in the left pop ups show the timer from the original code with a time of 0.59 seconds for 2017 and 0.50 seconds for 2018.  The pop ups on the right show a great improvement in performance with 0.11 seconds for 2017 and 0.09 seconds for 2018.
 
 **_Figure 2: Performance Results 2017_**
 
