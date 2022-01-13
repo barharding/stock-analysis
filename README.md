@@ -17,7 +17,7 @@ In this section we'll review the various parts of the original script which were
 - Changes to the Looping Pattern & Use of Arrays
 
 ### Performance Results
-The VBA code written for the **_YearAllStockAnalysis_** module and the refactored code for the **_AllStockAnalysisRefactored_** module produces the same spreadsheet output as shown in **_Figure 1_** along with the timer pop ups shown in **Figures 2 & Figures 3**.  
+The VBA code written for the **_YearAllStockAnalysis_** module and the refactored code for the **_AllStockAnalysisRefactored_** module produces the same spreadsheet output as shown in **_Figure 1_** along with the timer pop ups shown in **_Figures 2 & Figures 3_**.  
 
 **_Figure 1: Spreadsheet results refactored module_**
 
@@ -68,8 +68,10 @@ The **_AllStockAnalysisRefactored_** module **_Figure 8_** shows the code refact
 
 The For Loop performs the following steps:
 1. The counter is set to iterate through the rows
-2. The currticker variable is set to the current ticker by the tickerIndex array which is incremented by the tickercounter
-3. at the first row, it checks to see if the cells
+2. The currticker is set to the current ticker by the tickerIndex array which is incremented by the tickercounter (the code will only look at rows equal to the index ticker)
+3. The tickervolumes array is populated by the volume in column 8 of the row for that ticker
+4. The conditional statement for StaringPrice is executed and if true it writes to the starting price array that ticker
+5. The conditional statement for EndingPrice is executed and if true it writes to the ending price array for that ticker
 
 
 **_Figure 8:Refactored Single Loop_**
