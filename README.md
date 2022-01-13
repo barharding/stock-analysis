@@ -73,7 +73,7 @@ The For Loop performs the following steps:
 4. The conditional statement for StaringPrice is executed and if true it writes to the starting price array that ticker index
 5. The conditional statement for EndingPrice is executed and if true it writes to the ending price array for that ticker
 
-Becuase the values of the array are stored in memory assigned to their own index and array for each of the tickers there loop can iterate to the next tickerIndex and there is no need to stop and print the values.  The code can loop through each ticker and when it is done all of the tickers, the total volume and return can be written at one time to the worksheet.
+Becuase the values of the array are stored in memory assigned to their own index and array for each of the tickers the for loop can iterate to the next tickerIndex and there is no need to stop and print the values to the worksheet.  The code can loop through each ticker and when it is done all of the tickers, the total volume and return can be written as a single event after the for loop ends not within it.  This is more efficient.
 
 
 **_Figure 8:Refactored Single Loop_**
