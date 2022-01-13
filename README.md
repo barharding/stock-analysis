@@ -60,7 +60,7 @@ In the **_YearAllStockAnalysis_** module the original code uses two *For loops* 
 
 ![original embedded for loop](/original_code_nested_for_loop.png)
 
-The **_AllStockAnalysisRefactored_** module **_Figure 8_** shows the code refactored just after the TickerIndex array is set.  It begins by evaluating the lenght of the tickerIndex array so that we know how many tickers there are dynamically.  The following three arrays are then created:
+The **_AllStockAnalysisRefactored_** module **_Figure 8_** shows the next block of code just after the dynamic TickerIndex array is set.  It begins by evaluating the lenght of the tickerIndex array so that we know how many tickers are in the array.  The following three arrays are then created:
 
 - tickerVolumes
 - tickerStartingPrices
@@ -85,30 +85,21 @@ The For Loop performs the following steps:
 - There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt).
 
 - Advantages
-  - Refactoring code ddldldldldld
-  - dldldldld
-  - dldldldld
+  - Improved performance, readability or both by removing/fixing redundant or poorly written code
+  - Don't have to start from scratch
+  - Can be enhanced by removing hard coded values and might be made more scalable
 
 - Disadvantages
-  - dkdkdkdk
-  - dkdkdkd
-  - dkdkd
+  - It can sometimes take longer to understand and change someone else code rather than just writing from scratch
+  - Might introduce a bug
+  - It may not be necessary if the code is stable
 
 
 ### Advantages & Disadvantages of the Refactored VBA Script
 - There is a detailed statement on the advantages and disadvantages of the original and refactored VBA script (3 pt).
 
-- Advantages
-  - Refactoring code ddldldldldld
-  - dldldldld
-  - dldldldld
+The advantages of the refactored code is that it runs faster and the module is dynamic meaning it can be executed with with any number of tickers and rows without the need to manually update variables.  The code however is more complex than the original script.
 
-- Disadvantages
-  - dkdkdkdk
-  - dkdkdkd
-  - dkdkd
-
-
-
+The original code is easy to understand.  If the job needed to be completed quickly and this code will be executed infrequently and run time was not a concern it may be good enough to not spend the time and money to build a more complex piece of code.
 
 
