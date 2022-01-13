@@ -41,15 +41,16 @@ The original ticker array has its values manually set.  If the source data were 
 
 ![Original Array code](/initializing_array_for_all_tickers.png)
 
-In the refactored code the ticker array is created dynamically. This was acheived by refactoring a function which was sourced from https://www.py4u.net/discuss/1443953 answer # 2.
+In the refactored code, the ticker array is created dynamically by leveraging a function to read the ticker column into a dictionary and then return an array. This was acheived by refactoring a function which was sourced from https://www.py4u.net/discuss/1443953 answer # 2.  This function, called **_GetUniqeNames_**, uses the dictionary object to return an array from a specified range.  This approach was selected because it would effectively create a unique list of values because the dictionary object in VBA will not allow a duplicate key.  **_Figure 5_** shows the function **_GetUniqeNames_** and **_Figure 6_** Shows the TickerIndex Array being populated by the Function.
 
-**_Figure 5: Refactored Dynamic Array_**
+**_Figure 5: Dictional to Create Unique List of Values for the the Array_**
+
+![special function dictionary](/FunctionGetUniqeNames.png)
+
+**_Figure 6: Refactored Dynamic Array_**
 
 ![revised Array code](/ticker_index_from_dictionary.png)
 
-**_Figure 6: Dictional to Create Unique List of Values for the the Array_**
-
-![special function dictionary](/FunctionGetUniqeNames.png)
 
 ### Changes to the Looping Pattern & Use of Arrays
 
