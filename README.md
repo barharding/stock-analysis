@@ -73,6 +73,8 @@ The For Loop performs the following steps:
 4. The conditional statement for StaringPrice is executed and if true it writes to the starting price array that ticker index
 5. The conditional statement for EndingPrice is executed and if true it writes to the ending price array for that ticker
 
+Becuase the values of the array are stored in memory assigned to their own index and array for each of the tickers there loop can iterate to the next tickerIndex and there is no need to stop and print the values.  The code can loop through each ticker and when it is done all of the tickers, the total volume and return can be written at one time to the worksheet.
+
 
 **_Figure 8:Refactored Single Loop_**
 
@@ -82,24 +84,22 @@ The For Loop performs the following steps:
 ## Summary
 
 ### General Advantages & Disadvantages of Refactoring Code
-- There is a detailed statement on the advantages and disadvantages of refactoring code in general (3 pt).
 
-- Advantages
+The general advantages of refactoring code are:
   - Improved performance, readability or both by removing/fixing redundant or poorly written code
   - Don't have to start from scratch
   - Can be enhanced by removing hard coded values and might be made more scalable
 
-- Disadvantages
+The disadvantages are:
   - It can sometimes take longer to understand and change someone else code rather than just writing from scratch
   - Might introduce a bug
   - It may not be necessary if the code is stable
 
 
 ### Advantages & Disadvantages of the Refactored VBA Script
-- There is a detailed statement on the advantages and disadvantages of the original and refactored VBA script (3 pt).
 
-The advantages of the refactored code is that it runs faster and the module is dynamic meaning it can be executed with with any number of tickers and rows without the need to manually update variables.  The code however is more complex than the original script.
+The advantages of the refactored code in this challenge are that it executes and produces results faster.  The tickerIndex is dynamic and therefore no manual entry is required if the dataset grows.  One key disadvantage is that it is more complex than the original script.
 
-The original code is easy to understand.  If the job needed to be completed quickly and this code will be executed infrequently and run time was not a concern it may be good enough to not spend the time and money to build a more complex piece of code.
+The original code is easy to understand.  If the job needed to be completed quickly, and if this code will be executed infrequently, and if run time was not a concern, it may be good enough to not spend the time and money to build a more complex piece of code.
 
 
