@@ -20,6 +20,7 @@ In this section we'll review the various parts of the original script which were
 The VBA code written for the **_YearAllStockAnalysis_** module and the refactored code for the **_AllStockAnalysisRefactored_** module produces the same spreadsheet output along with the timer pop ups shown in Figures 2 & Figures 3
 
 **_Figure 1: Spreadsheet results refactored module_**
+
 ![Spreadsheet results](/Year_Over_Year_Comparison.png)
 
 **_Figure 2: Performance Results 2017_**
