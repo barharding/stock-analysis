@@ -2,11 +2,11 @@
 
 ## Overview of the Project
 
-The code written in module two defines an array of 12 stock tickers and then loops through the data to sum the total volumes and calculate the return. This project focuses on improving the performance of the code written during module two so that it performs more efficiently and uses less resources.  To acheive this outcome it was important to better understand the use of array's, to think creatively about options for changing the code, testing theories, and discarding things that don't work.
+The code written in module two defines an array of 12 stock tickers and then loops through the data to sum the total volumes and calculate the return. This project focuses on improving the performance of the module code so that it performs more efficiently and uses less resources.  To achieve this outcome it was important to better understand the use of array's, to think creatively about options for changing the code, testing theories, and discarding things that don't work.
 
 ### Purpose
 
-Refactoring code a reality in development for a number of reasons some good and others not so much.  Many times code is refactored because the requirements have changed and updates are required.  Other times end users may be experiencing time out errors, capacity constraints, or lengthy processing times frustrating their efforts to complete a task.  Whatever the reason, reviewing and modifying existing code either your own or others is common. This challenge takes the code written in module 2 and asks that the code be improved so that the average run time is decreased and the process loops through the data once.
+Refactoring code is a reality in development for several reasons some good and others not so much.  Many times code is refactored because the requirements have changed and updates are required.  Other times end users may be experiencing time out errors, capacity constraints, or lengthy processing times frustrating their efforts to complete a task.  Whatever the reason, reviewing and modifying existing code either your own or others is common. This challenge takes the code written in module 2 and asks that the code be improved so that the average run time is decreased and the process loops through the data once.
 
 ## Analysis
 
@@ -41,7 +41,7 @@ The original ticker array has its values manually set.  If the source data were 
 
 ![Original Array code](/initializing_array_for_all_tickers.png)
 
-In the refactored code, the ticker array is created dynamically by leveraging a function to read the ticker column into a dictionary and then return an array. This was acheived by refactoring a function which was sourced from https://www.py4u.net/discuss/1443953 answer # 2.  This function, called **_GetUniqeNames_**, uses the dictionary object to return an array from a specified range.  This approach was selected because it would effectively create a unique list of values because the dictionary object in VBA will not allow a duplicate key.  **_Figure 5_** shows the function **_GetUniqeNames_** and **_Figure 6_** Shows the TickerIndex Array being populated by the Function.
+In the refactored code, the ticker array is created dynamically by leveraging a function to read the ticker column into a dictionary and then return an array. This was achieved by refactoring a function which was sourced from https://www.py4u.net/discuss/1443953 answer # 2.  This function, called **_GetUniqeNames_**, uses the dictionary object to return an array from a specified range.  This approach was selected because it would effectively create a unique list of values because the dictionary object in VBA will not allow a duplicate key.  **_Figure 5_** shows the function **_GetUniqeNames_** and **_Figure 6_** Shows the TickerIndex Array being populated by the Function.
 
 **_Figure 5: Dictional to Create Unique List of Values for the the Array_**
 
@@ -54,13 +54,13 @@ In the refactored code, the ticker array is created dynamically by leveraging a 
 
 ### Changes to the Looping Pattern & Use of Arrays
 
-In the **_YearAllStockAnalysis_** module the original code uses two *For loops* with the second *For loop* nested to loop through the rows of data.  The outer loop will loop to the first ticker(0) and then will go into the inner loop.  The inner loop does three things at each of the 3013 rows.  First it will total the volume for each row that equals the ticker.  It also determines the starting price and ending price.  Followed by writing the values to the worksheet for the ticker as well as  increment to the next ticker by adding 1.  At this final step the outer loop begins again with the Ticker+1, repeats the cycle until it finishes at Ticker(11).  Each time the outer loop finishes it must write to the worksheet before it can move to the next ticker.  This stop, print, clear the variable and start anew for the next iteration has the effect of making the code run slower.
+In the **_YearAllStockAnalysis_** module the original code uses two *For loops* with the second *For loop* nested to loop through the rows of data.  The outer loop will loop to the first ticker(0) and then will go into the inner loop.  The inner loop does three things at each of the 3013 rows.  First it will total the volume for each row that equals the ticker.  It also determines the starting price and ending price.  Followed by writing the values to the worksheet for the ticker as well as  increment to the next ticker by adding 1.  At this final step the outer loop begins again with the Ticker+1, repeats the cycle until it finishes at Ticker(11).  Each time the outer loop finishes it must write to the worksheet before it can move to the next ticker.  By printing at each iteration of the outer loop it has the effect of performing slower.  
 
 **_Figure 7: Original For Loop & Embedded loop_**
 
 ![original embedded for loop](/original_code_nested_for_loop.png)
 
-The **_AllStockAnalysisRefactored_** module **_Figure 8_** shows the next block of code just after the dynamic TickerIndex array is set.  It begins by evaluating the lenght of the tickerIndex array so that we know how many tickers are in the array.  The following three arrays are then created:
+The **_AllStockAnalysisRefactored_** module **_Figure 8_** shows the next block of code just after the dynamic TickerIndex array is set.  It begins by evaluating the length of the tickerIndex array so that we know how many tickers are in the array.  The following three arrays are then created:
 
 - tickerVolumes
 - tickerStartingPrices
@@ -68,15 +68,15 @@ The **_AllStockAnalysisRefactored_** module **_Figure 8_** shows the next block 
 
 The For Loop performs the following steps:
 1. The counter is set to iterate through the rows
-2. The currticker is set to the current ticker by the tickerIndex array which is incremented by the tickercounter (the code will only look at rows equal to the index ticker)
+2. The currticker is set to the current ticker by the tickerIndex array which is incremented by the tickercounter
 3. The tickervolumes array is populated by the volume in column 8 of the row for that ticker
 4. The conditional statement for StaringPrice is executed and if true it writes to the starting price array that ticker index
 5. The conditional statement for EndingPrice is executed and if true it writes to the ending price array for that ticker
 
-Becuase the values of the array are stored in memory assigned to their own index and array for each of the tickers the for loop can iterate to the next tickerIndex and there is no need to stop and print the values to the worksheet.  The code can loop through each ticker and when it is done all of the tickers, the total volume and return can be written as a single event after the for loop ends not within it.  This is more efficient.
+Because the values of the array are stored in memory assigned to their own index and array for each of the tickers the for loop can iterate to the next tickerIndex and there is no need to stop and print the values to the worksheet.  The code can loop through each ticker and when it is done all of the tickers, the total volume and return can be written as a single event after the for loop ends not within it.  This is more efficient.
 
 
-**_Figure 8:Refactored Single Loop_**
+**_Figure 8: Refactored Single Loop_**
 
 ![refactored single loop](/refactored_code_single_for_loop.png)
 
@@ -86,7 +86,7 @@ Becuase the values of the array are stored in memory assigned to their own index
 ### General Advantages & Disadvantages of Refactoring Code
 
 The general advantages of refactoring code are:
-  - Improved performance, readability or both by removing/fixing redundant or poorly written code
+  - Improved performance, readability, or both by removing/fixing redundant or poorly written code
   - Don't have to start from scratch
   - Can be enhanced by removing hard coded values and might be made more scalable
 
