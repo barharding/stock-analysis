@@ -29,7 +29,7 @@ Both figures 2 & 3, in the left pop ups show the timer from the original code wi
 
 ![2017 Timer Compare](/2017_Comparison_Orig_vs_Refact.png)
 
-**_Figure 3:Performance Results 2018_**
+**_Figure 3: Performance Results 2018_**
 
 ![2018 Timer compare](/2018_Comparison_Orig_vs_Refact.png)
 
@@ -54,7 +54,7 @@ In the refactored code, the ticker array is created dynamically by leveraging a 
 
 ### Changes to the Looping Pattern & Use of Arrays
 
-In the **_YearAllStockAnalysis_** module the original code uses two *For loops* with the second *For loop* nested to loop through the rows of data.  The outer loop will loop to the first ticker(0) and then will go into the inner loop.  The inner loop does three things at each of the 3013 rows.  First it will total the volume for each row that equals the ticker.  It also determines the starting price and ending price.  Followed by writing the values to the worksheet for the ticker as well as  increment to the next ticker by adding 1.  At this final step the outer loop begins again with the Ticker+1, repeats the cycle until it finishes at Ticker(11).  Each time the outer loop finishes it must write to the worksheet before it can move to the next ticker.  By printing at each iteration of the outer loop it has the effect of performing slower.  
+In the **_YearAllStockAnalysis_** module the original code uses two *For loops* with the second *For loop* nested to loop through the rows of data.  The outer loop will loop to the first ticker(0) and then will go into the inner loop.  The inner loop does three things at each of the 3013 rows.  First it will total the volume for each row that equals the ticker.  It also determines the starting price and ending price.  Followed by writing the values to the worksheet for the ticker as well as increment to the next ticker by adding 1.  At this final step the outer loop begins again however with the next ticker which was set as Ticker+1.  The process repeats until it has cycled through all twelve tickers in the array. Just before each loop of the outerloop finishes it must write to the worksheet before it can move to the next ticker.  By printing at each iteration of the outer loop it has the effect of performing slower.  
 
 **_Figure 7: Original For Loop & Embedded loop_**
 
